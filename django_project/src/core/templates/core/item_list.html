@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+<section class="form-section">
+    <h2>Agregar Ítem</h2>
+    <form id="item-form">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="item-name">Nombre del ítem</label>
+            <input type="text" id="item-name" name="name" placeholder="Ejemplo: Laptop Dell" required>
+        </div>
+        <div class="form-group">
+            <label for="item-desc">Descripción</label>
+            <textarea id="item-desc" name="description" placeholder="Ejemplo: Core i7, 16GB RAM" required></textarea>
+        </div>
+        <button type="submit" class="btn">Agregar</button>
+    </form>
+</section>
+
+<section class="items-section">
+    <h2 class="section-title">Lista de Ítems</h2>
+    <ul class="items-container">
+        {% for item in items %}
+            <li class="fade-in" data-id="{{ item.id }}">
+                <div class="item-card">
+                    <h3>{{ item.name }}</h3>
+                    <p>{{ item.description }}</p>
+                    <small>Creado: {{ item.created_at|date:"d/m/Y H:i" }}</small>
+                    <span class="delete-btn">❌</span>
+                </div>
+            </li>
+        {% empty %}
+            <li>No items available.</li>
+        {% endfor %}
+    </ul>
+</section>
+{% endblock %}
