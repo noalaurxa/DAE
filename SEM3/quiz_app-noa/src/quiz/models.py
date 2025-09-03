@@ -11,14 +11,14 @@ class Exam(models.Model):
     def get_question_count(self):
         return self.questions.count()
 
-class Question(models.Model):
+class Question(models.Model): 
     exam = models.ForeignKey(Exam, on_delete=models.CASCADE, related_name='questions')
     text = models.TextField(verbose_name="Texto de la pregunta")
     
     def __str__(self):
         return self.text[:50]
 
-class Choice(models.Model):
+class Choice(models.Model): #opciones de la pregunta
     question = models.ForeignKey(Question, on_delete=models.CASCADE, related_name='choices')
     text = models.CharField(max_length=200, verbose_name="Texto")
     is_correct = models.BooleanField(default=False, verbose_name="Es correcta")

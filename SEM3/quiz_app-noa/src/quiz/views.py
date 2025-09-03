@@ -4,7 +4,7 @@ from django.db import transaction
 from .models import Exam, Question, Choice
 from .forms import ExamForm, QuestionForm, ChoiceFormSet
 
-def exam_list(request):
+def exam_list(request): 
     """View to display a list of all exams"""
     exams = Exam.objects.all().order_by('-created_date')
     return render(request, 'quiz/exam_list.html', {'exams': exams})
