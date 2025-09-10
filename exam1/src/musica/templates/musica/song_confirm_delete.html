@@ -1,0 +1,10 @@
+{% extends 'musica/base.html' %}
+{% block content %}
+<h2>Eliminar Canción</h2>
+<p>¿Seguro quieres eliminar "{{ song.titulo }}"?</p>
+<form method="post">
+    {% csrf_token %}
+    <button type="submit" class="btn btn-danger">Sí, eliminar</button>
+    <a href="{% url 'song_list' %}" class="btn btn-secondary">Cancelar</a>
+</form>
+{% endblock %}

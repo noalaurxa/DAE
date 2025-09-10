@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de canciones</title>
+</head>
+<body>
+    <h1>Lista de canciones</h1>
+    <ul>
+        {% for song in songs %}
+            <li>{{ song.title }} - {{ song.artist }}</li>
+        {% empty %}
+            <li>No hay canciones disponibles.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

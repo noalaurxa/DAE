@@ -1,0 +1,18 @@
+<!-- musica/templates/musica/artist_list.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Artistas</title>
+</head>
+<body>
+    <h1>Lista de Artistas</h1>
+    <ul>
+        {% for artist in artists %}
+            <li>{{ artist.name }}</li>
+        {% empty %}
+            <li>No hay artistas.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
