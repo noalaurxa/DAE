@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'quizzes'
+    'quizzes' #aqui se agrega las aplicaciones
 ]
 
 REST_FRAMEWORK = {
