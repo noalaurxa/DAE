@@ -1,4 +1,5 @@
 from django.db import models
+
 #Aqui van los modelos(tablas) de la aplicacion quiz 
 class Quiz(models.Model):
     title = models.CharField(max_length=255)
