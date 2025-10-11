@@ -7,7 +7,6 @@ import Platillo from './components/Platillo'
 function App() {
   return (
     <div>
-      <h1>Menú del Día</h1>
       <Platillo />
     </div>
   )

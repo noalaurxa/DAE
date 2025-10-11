@@ -21,6 +21,28 @@ const Platillo = () => {
       <p>
         Deliciosa trucha dorada al sartén, acompañada de papas doradas, ensalada y limón al gusto.
       </p>
+      <h1>Ají de Gallina</h1>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Aji_de_gallina_peruano.jpg"
+        alt="Ají de Gallina"
+        width="200"
+      />
+      <p>
+        Cremoso guiso peruano hecho con pollo desmenuzado, pan remojado, ají amarillo y nueces,
+        acompañado de arroz blanco y huevo duro.
+      </p>
+
+      <h1>Adobo de Chancho</h1>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Adobo_arequipeno.jpg"
+        alt="Adobo de Chancho"
+        width="200"
+      />
+      <p>
+        Tradicional plato arequipeño preparado con carne de cerdo marinada en chicha de jora,
+        ají panca y especias, cocido lentamente hasta quedar tierno y jugoso.
+      </p>
+      
     </div>
   );
 };
