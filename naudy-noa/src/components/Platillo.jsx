@@ -42,9 +42,8 @@ const Platillo = () => {
         Tradicional plato arequipeño preparado con carne de cerdo marinada en chicha de jora,
         ají panca y especias, cocido lentamente hasta quedar tierno y jugoso.
       </p>
-      
+
     </div>
   );
 };
-
 export default Platillo;
