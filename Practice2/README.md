@@ -18,7 +18,7 @@ No utiliza el panel de administración de Django; todo se gestiona mediante endp
 
 ### 1️⃣ Clonar el repositorio:
 ```bash
-git clone https://github.com/noalaurxa/DAE/tree/main/Practice2
+git clone https://github.com/noalaurxa/DAE.git
 ```
 ### 2️⃣ Entrar al proyecto:
 ```bash
