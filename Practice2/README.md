@@ -19,26 +19,16 @@ No utiliza el panel de administración de Django, todo se gestiona mediante endp
 ```bash
 git clone https://github.com/noalaurxa/DAE/tree/main/Practice2
 2️⃣ Entrar al proyecto:
-bash
-Copiar código
 cd Practice2
 3️⃣ Crear y activar un entorno virtual:
-bash
-Copiar código
 py -m venv venv
 venv\Scripts\activate   # En Windows
 source venv/bin/activate   # En Mac/Linux
 4️⃣ Instalar dependencias:
-bash
-Copiar código
 pip install django djangorestframework
 5️⃣ Ejecutar migraciones:
-bash
-Copiar código
 python manage.py migrate
 6️⃣ Levantar el servidor:
-bash
-Copiar código
 python manage.py runserver
 Luego, abre en tu navegador:
 👉 http://127.0.0.1:8000/api/pedidos/
@@ -69,8 +59,6 @@ Al listar pedidos, se muestra el nombre del cliente asociado dentro del JSON de 
 🔍 Búsqueda con filtros
 La API permite buscar pedidos según el estado del pedido o el nombre del cliente utilizando el parámetro search en la URL:
 
-bash
-Copiar código
 GET /api/pedidos/?search=entregado
 GET /api/pedidos/?search=naudy
 ✨ Puntos extra (opcional)
@@ -92,5 +80,4 @@ Las pruebas realizadas directamente desde el navegador, sin necesidad de Postman
 
 🧑‍💻 Autor
 Naudy Noa Laura
-Estudiante de Tecsup
-Examen – Django REST Framework (OrderFlow API)
+Examen2 – Django REST Framework (OrderFlow API)
