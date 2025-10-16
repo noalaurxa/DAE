@@ -24,7 +24,7 @@ git clone https://github.com/noalaurxa/DAE/tree/main/Practice2
 ```bash
 cd Practice2
 ```
-### 1️⃣ Crear y activar un entorno virtual:
+### 3️⃣ Crear y activar un entorno virtual:
 ```bash
 py -m venv venv
 venv\Scripts\activate   # En Windows
