@@ -22,7 +22,7 @@ git clone https://github.com/noalaurxa/DAE/tree/main/Practice2
 ```
 ### 2️⃣ Entrar al proyecto:
 ```bash
-cd Practice2
+cd DAE/Practice2
 ```
 ### 3️⃣ Crear y activar un entorno virtual:
 ```bash
