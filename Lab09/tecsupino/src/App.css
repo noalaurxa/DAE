@@ -1,0 +1,237 @@
+/* --- Estilos generales --- */
+#root {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2.5rem;
+  text-align: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* --- Container principal --- */
+.container {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 25px;
+  padding: 3rem 2rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+/* --- Logo --- */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms, transform 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+  transform: scale(1.1);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* --- Animación del logo --- */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* --- Tarjetas (Cards) --- */
+.card {
+  padding: 0;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  background: white;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  overflow: hidden;
+  border: 2px solid transparent;
+  position: relative;
+  width: 320px;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  transform: scaleX(0);
+  transition: transform 0.4s ease;
+}
+
+.card:hover::before {
+  transform: scaleX(1);
+}
+
+.card:hover {
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: 0 16px 48px rgba(102, 126, 234, 0.4);
+  border-color: #667eea;
+}
+
+/* --- Contenido de las tarjetas --- */
+.card-body {
+  padding: 1.5rem;
+}
+
+/* --- Texto dentro de las tarjetas --- */
+.card h3,
+.card .card-title {
+  margin-bottom: 0.75rem;
+  color: #1e293b;
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: -0.5px;
+}
+
+.card p,
+.card .card-text {
+  color: #64748b;
+  font-size: 0.95rem;
+  margin-bottom: 1.25rem;
+  line-height: 1.6;
+  min-height: 50px;
+}
+
+/* --- Imágenes de los institutos --- */
+.card img,
+.card .card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0;
+  margin-bottom: 0;
+  transition: transform 0.4s ease;
+}
+
+.card:hover img,
+.card:hover .card-img-top {
+  transform: scale(1.08);
+}
+
+/* --- Botones / Enlaces --- */
+.card a,
+.card .btn {
+  text-decoration: none;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-block;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+  border: none;
+  cursor: pointer;
+}
+
+.card a:hover,
+.card .btn:hover {
+  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+  transform: translateY(-2px);
+}
+
+/* --- Grid de tarjetas --- */
+.d-flex.flex-wrap {
+  gap: 2rem !important;
+}
+
+/* --- Texto general --- */
+.read-the-docs {
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+/* --- Animación de entrada --- */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.card:nth-child(1) { animation-delay: 0.1s; }
+.card:nth-child(2) { animation-delay: 0.2s; }
+.card:nth-child(3) { animation-delay: 0.3s; }
+.card:nth-child(4) { animation-delay: 0.4s; }
+.card:nth-child(5) { animation-delay: 0.5s; }
+.card:nth-child(6) { animation-delay: 0.6s; }
+.card:nth-child(7) { animation-delay: 0.7s; }
+.card:nth-child(8) { animation-delay: 0.8s; }
+.card:nth-child(9) { animation-delay: 0.9s; }
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  #root {
+    padding: 1.5rem;
+  }
+
+  .container {
+    padding: 2rem 1rem;
+    border-radius: 20px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  .card img,
+  .card .card-img-top {
+    height: 180px;
+  }
+
+  .d-flex.flex-wrap {
+    gap: 1.5rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .card h3,
+  .card .card-title {
+    font-size: 1.2rem;
+  }
+
+  .card p,
+  .card .card-text {
+    font-size: 0.9rem;
+  }
+
+  .card a,
+  .card .btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
