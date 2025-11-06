@@ -1,21 +1,18 @@
-import axios from "axios";
+const BASE_URL = "https://pokeapi.co/api/v2/pokemon";
 
 export const getPokemons = async (limit = 20) => {
-  try {
-    const res = await axios.get(`https://pokeapi.co/api/v2/pokemon?limit=${limit}`);
-    return res.data.results;
-  } catch (error) {
-    console.error("Error fetching Pokémon:", error);
-    return [];
-  }
+  const res = await fetch(`${BASE_URL}?limit=${limit}`);
+  const data = await res.json();
+  return data.results;
 };
 
 export const getPokemonDetails = async (url) => {
   try {
-    const res = await axios.get(url);
-    return res.data;
-  } catch (error) {
-    console.error("Error fetching details:", error);
+    const res = await fetch(url);
+    const data = await res.json();
+    return data;
+  } catch (err) {
+    console.error("Error fetching Pokémon details", err);
     return null;
   }
 };
