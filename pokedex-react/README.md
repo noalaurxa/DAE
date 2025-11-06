@@ -1,18 +1,106 @@
-# React + Vite
+# 🎮 PokéDex Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web interactiva para explorar Pokémon, desarrollada con **React** y **Tailwind CSS**. Muestra información detallada de cada Pokémon, incluyendo altura, peso, tipo y estadísticas.
 
-Currently, two official plugins are available:
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![Netlify](https://img.shields.io/badge/Deploy-Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Demo en Vivo (Netlify)
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+Puedes ver la aplicación desplegada y probarla aquí:
 
-Note: This will impact Vite dev & build performances.
+**[https://pokedex-react-demo.netlify.app](https://pokedex-react-demo.netlify.app)**
+*(¡Reemplaza este enlace por tu URL de Netlify!)*
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📺 Video Demo (YouTube)
+
+Mira un recorrido rápido de las funcionalidades del proyecto:
+
+**[https://www.youtube.com/watch?v=TU_PROYECTO](https://www.youtube.com/watch?v=TU_PROYECTO)**
+*(¡Reemplaza este enlace por tu URL de YouTube!)*
+
+---
+
+## ✨ Características
+
+* **Listado Completo:** Visualiza todos los Pokémon con sus imágenes, tipos y estadísticas.
+* **Buscador Integrado:** Filtra Pokémon por nombre o ID de manera instantánea.
+* **Estilos Modernos:** Interfaz con efectos de *glassmorphism*, animaciones y detalles en neón.
+* **Diseño Responsive:** Totalmente adaptable a dispositivos móviles, tablets y escritorio.
+* **Notificaciones:** Alertas y avisos de carga utilizando *React Toastify*.
+
+---
+
+## 🛠️ Stack de Tecnologías
+
+* **React** (v18+)
+* **Tailwind CSS**
+* **React Router**
+* **React Toastify**
+* **PokéAPI** (Fuente de datos)
+
+---
+
+## ⚡ Instalación y Ejecución Local
+
+1.  **Clonar el repositorio:**
+    ```bash
+    git clone [https://github.com/noalaurxa/DAE.git](https://github.com/noalaurxa/DAE.git)
+    ```
+
+2.  **Navegar al directorio del proyecto:**
+    ```bash
+    cd DAE/pokedex-react
+    ```
+
+3.  **Instalar dependencias:**
+    ```bash
+    npm install
+    ```
+
+4.  **Ejecutar la aplicación:**
+    ```bash
+    npm start
+    ```
+    La aplicación se abrirá automáticamente en `http://localhost:3000`.
+
+---
+
+## 📁 Estructura del Proyecto
+
+pokedex-react/ ├─ public/ ├─ src/ │ ├─ components/ │ │ ├─ Navbar.jsx │ │ ├─ PokemonCard.jsx │ │ └─ SearchBar.jsx │ ├─ services/ │ │ └─ api.js │ ├─ pages/ │ │ ├─ Home.jsx │ │ └─ Entities.jsx │ ├─ App.jsx │ └─ index.jsx ├─ package.json ├─ tailwind.config.js └─ README.md
+
+---
+
+## ⚙️ Configuración para Despliegue (Netlify)
+
+Para asegurar un despliegue exitoso en Netlify, utiliza la siguiente configuración:
+
+* **Base directory:** `pokedex-react`
+* **Build command:** `npm run build`
+* **Publish directory:** `build`
+
+---
+
+## 🤝 Contribuciones
+
+Si deseas contribuir a este proyecto, ¡eres bienvenido!
+
+1.  Haz un **Fork** del repositorio.
+2.  Crea tu propia rama: `git checkout -b feature/nueva-funcionalidad`
+3.  Realiza tus cambios y haz commit: `git commit -m "Agrega nueva funcionalidad"`
+4.  Envía tus cambios: `git push origin feature/nueva-funcionalidad`
+5.  Abre un **Pull Request**.
+
+---
+
+## 📝 Licencia
+
+Distribuido bajo la Licencia MIT.
+
+© 2025
