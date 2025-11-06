@@ -12,8 +12,8 @@ Aplicación web interactiva para explorar Pokémon, desarrollada con **React** y
 
 Puedes ver la aplicación desplegada y probarla aquí:
 
-**[https://pokedex-react-demo.netlify.app](https://pokedex-react-demo.netlify.app)**
-*(¡Reemplaza este enlace por tu URL de Netlify!)*
+**https://practice3-noa-dae.netlify.app/**
+
 
 ---
 
@@ -21,8 +21,7 @@ Puedes ver la aplicación desplegada y probarla aquí:
 
 Mira un recorrido rápido de las funcionalidades del proyecto:
 
-**[https://www.youtube.com/watch?v=TU_PROYECTO](https://www.youtube.com/watch?v=TU_PROYECTO)**
-*(¡Reemplaza este enlace por tu URL de YouTube!)*
+**https://youtu.be/x6eYVg1FIS8?si=T9OhYi35LaWAe_tN**
 
 ---
 
@@ -73,7 +72,23 @@ Mira un recorrido rápido de las funcionalidades del proyecto:
 
 ## 📁 Estructura del Proyecto
 
-pokedex-react/ ├─ public/ ├─ src/ │ ├─ components/ │ │ ├─ Navbar.jsx │ │ ├─ PokemonCard.jsx │ │ └─ SearchBar.jsx │ ├─ services/ │ │ └─ api.js │ ├─ pages/ │ │ ├─ Home.jsx │ │ └─ Entities.jsx │ ├─ App.jsx │ └─ index.jsx ├─ package.json ├─ tailwind.config.js └─ README.md
+pokedex-react/
+├─ public/
+├─ src/
+│  ├─ components/
+│  │  ├─ Navbar.jsx
+│  │  ├─ PokemonCard.jsx
+│  │  └─ SearchBar.jsx
+│  ├─ services/
+│  │  └─ api.js
+│  ├─ pages/
+│  │  ├─ Home.jsx
+│  │  └─ Entities.jsx
+│  ├─ App.jsx
+│  └─ index.jsx
+├─ package.json
+├─ tailwind.config.js
+└─ README.md
 
 ---
 
