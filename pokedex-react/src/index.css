@@ -1,15 +1,21 @@
+/* Importar fuentes al inicio */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Tailwind Directives */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Reset global */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Body styling */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
